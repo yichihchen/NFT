@@ -1,6 +1,13 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./base/base";
 
-
-@import './layout/index.scss'
+@import "./utilities/utilities";
+@import "./mixin/mixin";
+@import "./helpers/helper";
+@import "./helpers/hover";
+@import "./components/button";
+@import "./components/card";
+@import "./pages/layout";
+@import "./pages/index";
