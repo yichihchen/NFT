@@ -1,0 +1,51 @@
+//section
+.section {
+    @media(min-width:992px) {
+        padding-top: 40px;
+    }
+}
+
+//card-1
+.card-1 {
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+//card1 recommend
+.recommend {
+    width: 100px;
+    height: 100%;
+    background-color: $secondary;
+    writing-mode: vertical-lr;
+}
+
+.card-title {
+    font-size: $h4-font-size;
+
+    @media(min-width:992px) {
+        font-size: $h3-font-size ;
+    }
+}
+
+.card-body-author {          //首頁第一區塊才用的到
+    padding-top: 32px;
+
+    @media(min-width:992px) {
+        padding-top: 80px;
+    }
+}
+
+.card-body {
+    height: 100%; //讓card-body跟col-lg-4一樣大
+}
+
+//ranking
+.card-ranking2 {    //樣式記得跟其他card一樣下在img
+    img {
+        @media(min-width:992px) {
+            width: 424px;
+        }
+    }
+}

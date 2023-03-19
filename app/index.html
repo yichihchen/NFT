@@ -4,5 +4,154 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<div class="section">
+    <div class="container-xxl g-0">
+        <div class="card-1 border">
+            <div class="row g-0">
+                <div class="card-1-left col-lg-8 position-relative pe-lg-4">
+                    <!-- recommand父層 -->
+                    <div class="d-none d-lg-block">
+                        <div class="recommend d-flex align-items-center text-white position-absolute pt-4">
+                            <!-- img左邊黑色方形 -->
+                            <p class="fs-1">Recommend</p>
+                            <p class="fs-4">&nbsp&nbsp 推薦系列</p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/index-art01.jpg" class="rounded-0" alt="瞳孔-流動的脈絡">
+                </div>
+                <div class="col-lg-4 pe-lg-4 px-3 pb-4 ">
+                    <div class="card-body position-relative">
+                        <p class="card-body-author fs-5">Kemus Wu</p>
+                        <h5 class="card-title fs-3 pt-2 font-bold">瞳孔:流動的脈絡</h5>
+                        <p class="card-text fs-6 pt-4 pb-7">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+                        <div class="btn-triangle position-absolute bottom-0 end-0">
+                            <a class="card-1-more d-block btn-size btn-white px-7 py-2 lh-1 btn-triangle"
+                                href="#">more</a>
+                        </div>
+                    </div>
+                </div> <!-- col-md-8 -->
+            </div> <!-- row end -->
+        </div> <!-- card-1 end -->
 
 
+        <div class="d-flex flex-wrap">
+            <!-- d-flex card2&3 start -->
+            <div class="card-2 col-lg-6 border">
+                <div class="row g-0 d-flex flex-row-reverse">
+                    <div class="card-2-left col-lg-6">
+                        <img class="object-fit-fill" src="/assets/images/art02.jpg" class="rounded-0" alt="海洋波度">
+                    </div>
+                    <div class="col-lg-6 pe-lg-4 px-3 pb-4">
+                        <div class="card-body position-relative">
+                            <p class="card-body-author fs-5">Joanne</p>
+                            <h5 class="card-title fs-3 pt-2 font-bold">海洋波度</h5>
+                            <p class="card-text fs-6 pt-4 pb-7">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+                            <div class="btn-triangle position-absolute bottom-0 end-0">
+                                <a class="card-1-more d-block btn-size btn-white px-7 py-2 lh-1 btn-triangle"
+                                    href="#">more</a>
+                            </div>
+                        </div>
+                    </div> <!-- col-md-8 -->
+                </div> <!-- row end -->
+            </div> <!-- card-2 end -->
+
+            <div class="card-3 col-lg-6 border">
+                <div class="row g-0 d-flex flex-row-reverse">
+                    <div class="card-3-left col-lg-6">
+                        <img src="./assets/images/art21.jpg" class="rounded-0" alt="我家窗前的鳥">
+                    </div>
+                    <div class="col-lg-6 pe-lg-4 px-3 pb-4 ">
+                        <div class="card-body position-relative">
+                            <p class="card-body-author fs-5">Michael</p>
+                            <h5 class="card-title fs-3 pt-2 font-bold">我家窗前的鳥</h5>
+                            <p class="card-text fs-6 pt-4 pb-7">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+                            </p>
+                            <div class="btn-triangle position-absolute bottom-0 end-0">
+                                <a class="card-1-more d-block btn-size btn-white px-7 py-2 lh-1 btn-triangle"
+                                    href="#">more</a>
+                            </div>
+                        </div>
+                    </div> <!-- col-md-8 -->
+                </div> <!-- row end -->
+            </div> <!-- card-3 end -->
+        </div> <!-- d-flex card2&3 end-->
+
+        <!-- ranking -->
+        <!-- rank big card -->
+        <div class="ranking">
+            <div class="d-lg-flex flex-wrap">
+                <!-- d-flex start -->
+                <div class="card-ranking1 d-flex flex-lg-column pr-25">
+                    <a href="#"><img class="bigcard-rank" src="./assets/images/art04.jpg" class="card-img-top"
+                            alt="..."></a>
+                    <div class="card-body">
+                        <p class="card-author fs-5">Zoe Jiang</p>
+                        <h5 class="card-title">散步遇到的女人</h5>
+                        <p class="card-text"><i class="fa-brands fa-ethereum"></i>300</p>
+                    </div>
+                </div>
+                <div class="card-ranking2 d-flex flex-lg-column pr-25">
+                    <a href="#"><img class="bigcard-rank" src="./assets/images/art05.jpg" class="card-img-top"
+                            alt="爆炸頭的母親"></a>
+                    <div class="card-body">
+                        <p class="card-author fs-5">Yui</p>
+                        <h5 class="card-title">爆炸頭的母親</h5>
+                        <p class="card-text"><i class="fa-brands fa-ethereum"></i>300</p>
+                    </div>
+                </div>
+
+                <div class="card-ranking3 d-flex flex-lg-column">
+                    <a href="#"><img class="bigcard-rank" src="./assets/images/art06.jpg" class="card-img-top"
+                            alt="夏天的時候"></a>
+                    <div class="card-body">
+                        <p class="card-author fs-5">Bug Lin</p>
+                        <h5 class="card-title">夏天的時候</h5>
+                        <p class="card-text"><i class="fa-brands fa-ethereum"></i>300</p>
+                    </div>
+                </div>
+            </div>
+            <!-- d-flex end -->
+
+            <!-- rank small card -->
+            <!-- d-flex start -->
+            <div class="d-lg-flex flex-wrap">
+                <div class="card-ranking4 d-flex pe-lg-4 col-lg-4">
+                    <a href="#"><img class="smallcard-rank" src="./assets/images/art13.jpg" class="card-img-top" alt="夏天的時候"></a>
+                    <div class="card-body">
+                        <p class="card-author fs-5">Michael</p>
+                        <h5 class="card-title">追求者送我的花</h5>
+                        <p class="card-text"><i class="fa-brands fa-ethereum"></i>300</p>
+                    </div>
+                </div>
+
+
+                <div class="card-ranking5 d-flex pe-lg-4 col-lg-4">
+                    <a href="#"><img class="smallcard-rank" src="./assets/images/art07.jpg" class="card-img-top" alt="今天釣到的魚"></a>
+                    <div class="card-body">
+                        <p class="card-author fs-5">Wei JJ</p>
+                        <h5 class="card-title">今天釣到的魚</h5>
+                        <p class="card-text"><i class="fa-brands fa-ethereum"></i>300</p>
+                    </div>
+                </div>
+
+                <div class="card-ranking6 d-flex pe-lg-4 col-lg-4">
+                    <a href="#"><img class="smallcard-rank" src="./assets/images/art08.jpg" class="card-img-top" alt="人生中的貓咪們"></a>
+                    <div class="card-body">
+                        <p class="card-author fs-5">Even Lai</p>
+                        <h5 class="card-title">人生中的貓咪們</h5>
+                        <p class="card-text"><i class="fa-brands fa-ethereum"></i>300</p>
+                    </div>
+                </div>
+            </div> <!-- d-flex end -->
+        </div> <!-- ranking -->
+
+
+
+
+
+
+
+
+    </div> <!-- container end -->
+</div>
+<!-- section end-->

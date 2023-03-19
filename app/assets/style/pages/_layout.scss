@@ -33,17 +33,11 @@
 
 //search box 電腦才有
 .search-box{
-    width: 432px;
-    height: 24px;
-}
-
-//nav-item
-.nav-item {
-    border-bottom: 1px solid #000;
-    outline: 1px solid red; 
-    //這裡我要怎麼寫讓a碰到後邊線消失?
-
-  
+   //手機版不定寬度 定死會漢堡選單會跑到下一行
+    @media(min-width:992px){
+        width: 432px;
+        height: 100%;
+    }
 }
 
 //navbar button

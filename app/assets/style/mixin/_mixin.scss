@@ -1,2 +1,7 @@
 //放media queries
 //logo大小
+
+@mixin images(){
+    object-fit: cover;
+    @content
+}

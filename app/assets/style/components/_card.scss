@@ -1,0 +1,31 @@
+//card-basic
+.card-basic {
+    border-radius: 0%; //圓角為0  html有設定其實不用
+}
+
+//ranking 1-3張圖 區塊card基本樣式
+.bigcard-rank {
+    width: 87px;
+    height: 91px;
+    object-fit: cover;
+    object-position: top; //切掉的頭才會被看到
+
+    @media(min-width:992px) {
+        width: 423px;
+        height: 374px;
+    }
+}
+
+//ranking 1-3張圖 中間padding-right:25px
+.pr-25 {
+    padding-right: 25px;
+}
+
+//ranking 4-6張圖 區塊card基本樣式
+.smallcard-rank {
+    width: 87px;
+    height: 91px;
+    object-fit: cover;
+    object-position: top; //切掉的頭才會被看到
+
+}

@@ -12,34 +12,38 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-xxl border border-top-0">
-
-      <h1 class="logo"><a class="navbar-brand" href="#">Navbar</a></h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+    <div class="container-xxl border-bottom">
+      <div class="py-3 py-lg-5">
+        <h1 class="logo"><a class="navbar-brand" href="#">Navbar</a></h1>
+      </div>
       <!-- search-box -->
-      <div class="search-box d-flex px-4 px-lg-7 ms-auto">
+      <div class="search-box d-flex px-4 px-lg-7 ms-auto border-start">
         <p class="text-dark d-lg-block d-none">搜尋作品名稱、藝術家名稱</p>
         <!-- search icon -->
         <i class="fa-solid fa-magnifying-glass ms-auto"></i>
-      </div> <!-- search-box end-->
+      </div> <!-- search-box end-->  
+      <!-- 漢堡選單邊框點下去邊框會出現??? -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-bars"></i>
+        <!-- 我想讓叉叉用js解決 有動態感 -->
       </button>
 
       <!-- 這裡開始nav下拉選單 -->
       <div class="collapse navbar-collapse flex-grow-0 ms-0" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 text-center ms-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link active nav-button fs-5 py-3 py-lg-4 px-lg-4 d-block" aria-current="page" href="#">探索</a>
+          <li class="nav-item border-start border-end ">
+            <a class="nav-link active nav-button fs-5 py-3 py-lg-6 px-lg-4 d-block"
+              aria-current="page" href="#">探索</a>
             <!-- 這段是啥? -->
           </li>
-          <li class="nav-item">
-            <a class="nav-link active nav-button fs-5 py-3 py-lg-4 px-lg-4 d-block" href="#">市值</a>
+          <li class="nav-item border-end" >
+            <a class="nav-link active nav-button fs-5 py-3 py-lg-6 px-lg-4 d-block" href="#">市值</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active nav-button fs-5 py-4 ps-5 pe-8">
-              <p class="d-lg-none d-block">連結錢包</p>
+          <li class="nav-item border-end">
+            <a class="nav-link active nav-button fs-5 py-3 py-lg-6 ps-lg-5 pe-lg-8 ">
+              <p class="d-lg-none d-block m-0">連結錢包</p>
               <i class="fa-solid fa-wallet d-none d-lg-block"></i>
             </a>
           </li>

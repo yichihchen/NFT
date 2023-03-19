@@ -1,8 +1,38 @@
+//整體button結構
+.btn-triangle {
+    position: relative;
+}
+
+.btn-triangle ::after {
+    position: absolute;
+    content: " ";
+    right: 0;
+    bottom: 0;
+    border-left: 16px solid transparent;
+    border-bottom: 16px solid #E6553B;
+}
+
+//Q:為什麼父層和子層a標籤 下了一樣的btn-triangle會出現正確的結果????
+
+.btn-triangle ::after  :hover {
+      border-bottom: 16px black solid; //hover三角形變黑色，為何無法變色?
+}
+
+//btn-size
+.btn-size {
+    width: 132px;
+    height: 35px;
+}
+
+
 //整體button樣式
 .btn-white {
     background-color: white;
     border: 1px solid #000;
 }
 
-
-
+.btn-white:hover {
+    background-color: $primary;
+    color: white;
+    border: 1px solid #000;
+}
