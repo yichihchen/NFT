@@ -4,6 +4,7 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@700&family=Squada+One&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -47,7 +48,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Squada One", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -134,27 +135,21 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-
-@media (min-width: 1200px) {
-  h3, .h3 {
-    font-size: 1.75rem;
-  }
-}
-
-h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
 
 @media (min-width: 1200px) {
-  h4, .h4 {
+  h3, .h3 {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 1.25rem;
+}
+
+h5, .h5 {
+  font-size: 1.125rem;
 }
 
 h6, .h6 {
@@ -5066,7 +5061,7 @@ fieldset:disabled .btn {
   --bs-card-spacer-x: 1rem;
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-border-width: 1px;
-  --bs-card-border-color: rgba(0, 0, 0, 0.125);
+  --bs-card-border-color: #000;
   --bs-card-border-radius: 0.25rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(0.25rem - 1px);
@@ -9656,15 +9651,15 @@ fieldset:disabled .btn {
 }
 
 .fs-3 {
-  font-size: calc(1.475rem + 2.7vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-4 {
-  font-size: calc(1.3125rem + 0.75vw) !important;
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 
 .fs-5 {
-  font-size: calc(1.26563rem + 0.1875vw) !important;
+  font-size: 1.125rem !important;
 }
 
 .fs-6 {
@@ -13646,13 +13641,10 @@ fieldset:disabled .btn {
     font-size: 2rem !important;
   }
   .fs-3 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
   }
   .fs-4 {
-    font-size: 1.875rem !important;
-  }
-  .fs-5 {
-    font-size: 1.40625rem !important;
+    font-size: 1.5rem !important;
   }
 }
 
@@ -13715,9 +13707,74 @@ img {
   vertical-align: middle;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.btn-triangle {
+  position: relative;
+}
+
+.btn-triangle ::after {
+  position: absolute;
+  content: " ";
+  right: 0;
+  bottom: 0;
+  border-left: 16px solid transparent;
+  border-bottom: 16px solid #E6553B;
+}
+
+.btn-triangle ::after :hover {
+  border-bottom: 16px black solid;
+}
+
+.btn-size {
+  width: 132px;
+  height: 35px;
+}
+
 .btn-white {
   background-color: white;
   border: 1px solid #000;
+}
+
+.btn-white:hover {
+  background-color: #E6553B;
+  color: white;
+  border: 1px solid #000;
+}
+
+.card-basic {
+  border-radius: 0%;
+}
+
+.bigcard-rank {
+  width: 87px;
+  height: 91px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+@media (min-width: 992px) {
+  .bigcard-rank {
+    width: 423px;
+    height: 374px;
+  }
+}
+
+.pr-25 {
+  padding-right: 25px;
+}
+
+.smallcard-rank {
+  width: 87px;
+  height: 91px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .navbar .logo a {
@@ -13749,14 +13806,11 @@ img {
   }
 }
 
-.search-box {
-  width: 432px;
-  height: 24px;
-}
-
-.nav-item {
-  border-bottom: 1px solid #000;
-  outline: 1px solid red;
+@media (min-width: 992px) {
+  .search-box {
+    width: 432px;
+    height: 100%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -13767,6 +13821,57 @@ img {
 
 .nav-button:hover {
   background-color: #E6553B;
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding-top: 40px;
+  }
+}
+
+.card-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.recommend {
+  width: 100px;
+  height: 100%;
+  background-color: #000000;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+.card-body-author {
+  padding-top: 32px;
+}
+
+@media (min-width: 992px) {
+  .card-body-author {
+    padding-top: 80px;
+  }
+}
+
+.card-body {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .card-ranking2 img {
+    width: 424px;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
